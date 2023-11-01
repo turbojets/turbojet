@@ -72,6 +72,24 @@
               <a href="payment.html" class="u-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-radius-5 u-btn-1">Next</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
+
+            <script>
+              var form = document.getElementById('sheetdb-form');
+           form.addEventListener("submit", e => {
+             e.preventDefault();
+             fetch(form.action, {
+                 method : "POST",
+                 body: new FormData(document.getElementById("sheetdb-form")),
+             }).then(
+                 response => response.json()
+             ).then((html) => {
+               // you can put any JS code here
+               window.open('payment.html', '_blank');
+        
+             });
+           });
+        </script>
+
           </form>
         </div>
         <h6 class="u-text u-text-default-xs u-text-1">Order summary</h6>
@@ -91,22 +109,6 @@
         <h3 class="u-text u-text-default-xs u-text-10">Delivery</h3><span class="u-file-icon u-icon u-text-grey-50 u-icon-1"><img src="images/471664-093e94e2.png" alt=""></span>
       </div>
     
-    <script>
-      var form = document.getElementById('sheetdb-form');
-   form.addEventListener("submit", e => {
-     e.preventDefault();
-     fetch(form.action, {
-         method : "POST",
-         body: new FormData(document.getElementById("sheetdb-form")),
-     }).then(
-         response => response.json()
-     ).then((html) => {
-       // you can put any JS code here
-       window.open('payment.html', '_blank');
-
-     });
-   });
-</script>
 
 </section>
     
