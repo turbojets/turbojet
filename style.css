@@ -78,6 +78,7 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  
 }
 
 .btn:hover {
@@ -105,6 +106,7 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+  
 }
 
 img {
