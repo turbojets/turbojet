@@ -27,8 +27,8 @@ h1 {
 }
 
 .col-50 {
-  -ms-flex: 50%; 
-  flex: 50%;
+  -ms-flex: 100%; 
+  flex: 100%;
 }
 
 .col-75 {
